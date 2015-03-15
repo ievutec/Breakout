@@ -345,6 +345,7 @@ public class Breakout extends GraphicsProgram {
 	
 	private void printGameOver() {
 		GLabel gameOver = new GLabel ("Game Over", getWidth()/2, getHeight()/2);
+		gameOver.setFont(new Font("Serif", Font.BOLD, 36));
 		gameOver.move(-gameOver.getWidth()/2, -gameOver.getHeight());
 		gameOver.setColor(Color.RED);
 		add (gameOver);
